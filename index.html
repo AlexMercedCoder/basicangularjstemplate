@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Application</title>
+
+    <!-- ANGULAR JS SCRIPT TAGS - LTS SUPPORT ENDS 12/31/2020-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.min.js"
+      integrity="sha512-jiG+LwJB0bmXdn4byKzWH6whPpnLy1pnGA/p3VCXFLk4IJ/Ftfcb22katPTapt35Q6kwrlnRheK6UPOIdJhYTA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ----------------------------- -->
+
+    <!-- --------PURE CSS FOR BASIC CSS ASSISTANCE -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+      integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
+      crossorigin="anonymous"
+    />
+    <!-- ---------------------- -->
+
+    <!-- YOUR CUSTOM CODE -->
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- -------------------------- -->
+  </head>
+  <body ng-controller="ctrl as ctrl">
+    <div id="vue">
+      <h1>{{hello}}</h1>
+      <h2>{{ctrl.goodbye}}</h2>
+    </div>
+  </body>
+</html>
